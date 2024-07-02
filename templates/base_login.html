@@ -1,0 +1,16 @@
+{% extends 'base_home.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='base_login.css')}}">
+
+{% endblock %}
+
+
+{% block header %}
+
+<ul id='header_ul'>
+	<li class='header_li'><a href='/'>LOG OUT</a></li>
+</ul>
+
+{% endblock %}

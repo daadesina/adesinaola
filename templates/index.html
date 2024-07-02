@@ -1,0 +1,23 @@
+{% extends 'base_login.html' %}
+
+{% block head %} {{ super() }}
+
+<link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+
+{% endblock %}
+
+{% block section %}
+<div id='section_div'>
+	<div id=left_section></div>
+	<div id='center_section'>
+		<div class='content'><a href='/nature'>NATURE</a></div>
+		<div class='content'><a href='/language'>LANGUAGE</a></div>
+		<div class='content'><a href='/culture'>CULTURE</a></div>
+		<div class='content'><a href='/history'>HISTORY</a></div>
+		<div class='content'><a href='/music'>MUSIC</a></div>
+		<div class='content'><a href='/africa'>AFRICA</a></div>
+        </div>
+
+	<div id=right_section></div>
+
+{% endblock %}
